@@ -28,7 +28,7 @@ function incrementarPorUno(array) {
   // Tu código:
   var nuevo = [];
   for(var i = 0; i < array.length; i++) {
-    
+   // se guarda en nuevo (i)? 
     nuevo[i] = array[i] + 1;
   }
 
@@ -104,9 +104,9 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-  var max = numeros[0];
+  var max = numeros[0]; // empieza en indice de array numeros [0]
   for( var i = 0; i < numeros.length; i++) {
-    if( max < numeros[i]) {
+    if( numeros[i] > max) { // cada vez que da una vuelta en el bucle te guarda en max el mas grande
       max = numeros[i];
     } 
   }
@@ -135,10 +135,11 @@ function multiplicarArgumentos() {
   function cuentoElementos(arreglo){
     //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 19.
     //Escribe tu código aquí
+
    var elemt = [];
       for(var i = 0; i < arreglo.length; i++) {
           if(arreglo[i] > 18){
-              elemt++
+              elemt++ // que es esto
           }
       }
    
@@ -178,8 +179,9 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí
+
   for(var i = 0; i < arreglo.length; i++) {
-    if(arreglo[i] === arreglo[i + 1]) {
+    if(arreglo[i] === arreglo[i + 1]) { // que es esto
         return true ;
     } return false;
 }
